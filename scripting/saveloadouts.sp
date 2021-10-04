@@ -37,7 +37,7 @@ public void OnPluginStart()
 {
 	char error[255];
 
-	SQLiteDB = SQLite_UseDatabase("saveloadouts", error, sizeof(error));
+	SQLiteDB = SQLite_UseDatabase("saveloadout", error, sizeof(error));
 	if (SQLiteDB == INVALID_HANDLE)
 		SetFailState(error);
 
