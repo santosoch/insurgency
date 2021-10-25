@@ -373,7 +373,7 @@ void loload_cmd(int client)
 			rs.FetchString(3, sBuffer, sizeof(sBuffer));
 			ExplodeString(sBuffer, ";", ExplosivesArray, sizeof(ExplosivesArray), sizeof(ExplosivesArray[]));
 		}
-}
+	}
 	delete rs;
 
 	FakeClientCommand(client, "inventory_sell_all");
