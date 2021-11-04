@@ -62,7 +62,7 @@ public void OnMapStart()
 	GetConVarString(FindConVar("mp_gamemode"), g_sGameMode, sizeof(g_sGameMode));
 }
 
-public void OnClientPutInServer(int client)
+public void OnClientPostAdminCheck(int client)
 {
 	if (IsFakeClient(client)) return;
 
@@ -373,7 +373,7 @@ void loload_cmd(int client)
 			rs.FetchString(3, sBuffer, sizeof(sBuffer));
 			ExplodeString(sBuffer, ";", ExplosivesArray, sizeof(ExplosivesArray), sizeof(ExplosivesArray[]));
 		}
-	}
+}
 	delete rs;
 
 	FakeClientCommand(client, "inventory_sell_all");
