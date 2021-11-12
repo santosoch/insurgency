@@ -28,7 +28,7 @@ public Action Timer_RadarOnline(Handle timer)
 	{
 		for (int iTarget = 1; iTarget <= MaxClients; iTarget++)
 		{
-			if (!IsValidPlayer(iTarget) || !IsFakeClient(iTarget) || !IsPlayerAlive(iTarget)) continue;
+			if (!IsClientInGame(iTarget) || !IsFakeClient(iTarget) || !IsPlayerAlive(iTarget)) continue;
 			SetEntProp(iTarget, Prop_Send, "m_bGlowEnabled", true);
 			CreateTimer(0.98, Timer_RadarGlowOff, iTarget, TIMER_FLAG_NO_MAPCHANGE);
 		}
@@ -42,9 +42,4 @@ public Action Timer_RadarGlowOff(Handle timer, int client)
 	{
 		SetEntProp(client, Prop_Send, "m_bGlowEnabled", 0);
 	}
-}
-
-public bool IsValidPlayer(int client)
-{
-	return (0 < client <= MaxClients) && IsClientInGame(client);
 }
