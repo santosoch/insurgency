@@ -155,6 +155,11 @@ public Action losave_cmd(int client, int args)
 {
 	if (IsFakeClient(client) || client <= 0) return Plugin_Handled;
 
+	if(!IsPlayerAlive(client))
+	{
+		PrintToChat(client, "\x0700FA9A[MC]\x01 Can't save loadout while dead!");
+		return Plugin_Handled;
+	}
 	if (StrEqual(g_sGameMode, "checkpoint"))
 	{
 		int iFlags = GetEntProp(client, Prop_Send, "m_iPlayerFlags");
