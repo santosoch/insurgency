@@ -1,5 +1,6 @@
 //need simple-chatprocessor plugin to run (global forward OnChatMessage)
 //can be compiled using sm 1.11
+//it will show only in chat, like this: [Rifleman] Name: hello there...
 
 #pragma semicolon 1
 #pragma newdecls required
