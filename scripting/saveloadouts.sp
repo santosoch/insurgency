@@ -430,7 +430,7 @@ void loload_cmd(int client)
 
 public Action inventory_reset_cmd(int client, int args)
 {
-	if (!g_bClassSaveLoBefore[client]) return Plugin_Continue;
+	if (!g_bClassSaveLoBefore[client] || IsFakeClient(client)) return Plugin_Continue;
 	int CurrentTime = GetTime();
 
 	if (CurrentTime-loload_cooldowntime[client] > 3)
