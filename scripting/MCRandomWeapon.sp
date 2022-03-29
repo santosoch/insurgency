@@ -103,11 +103,11 @@ void GetRandomWeapon(int client)
 		//get secondary pistol
 		switch(GetRandomInt(1, 5))
 		{
-			case 1: g_sBotSecondary[client] = "43;48"; //fiveseven: 100;50;102
-			case 2: g_sBotSecondary[client] = "62;48"; //glock18: 103;50;83
-			case 3: g_sBotSecondary[client] = "42;48"; //glock33: 99;50;95
-			case 4: g_sBotSecondary[client] = "60;48"; //deagle: 102;50;93
-			case 5: g_sBotSecondary[client] = "58;48;125"; //waltherppk: 93;50;87
+			case 1: g_sBotSecondary[client] = "100;50;102"; //fiveseven: 100;50;102
+			case 2: g_sBotSecondary[client] = "103;50;83"; //glock18: 103;50;83
+			case 3: g_sBotSecondary[client] = "99;50;95"; //glock33: 99;50;95
+			case 4: g_sBotSecondary[client] = "102;50;93"; //deagle: 102;50;93
+			case 5: g_sBotSecondary[client] = "93;50;87"; //waltherppk: 93;50;87
 		}
 		if (StrContains(g_sPlayerClassTemplate[client], "heavygunner", false) != -1)
 		{
