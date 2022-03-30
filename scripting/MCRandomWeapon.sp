@@ -90,7 +90,7 @@ public Action Event_PlayerDeathPre(Handle event, const char[] name, bool dontBro
 		PrintToChatAll("weapon: %s", cWeaponName);
 	}	*/
 
-	GetRandomWeapon(victim);
+	if (g_iTheaterMode != 0) GetRandomWeapon(victim);
 	return Plugin_Continue;
 }
 
