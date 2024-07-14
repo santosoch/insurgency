@@ -1,3 +1,5 @@
+//it WON't work with sm 1.11. Im using sm 1.10.0-6502
+
 /* inspired by Nullifidian */
 
 #pragma semicolon 1
