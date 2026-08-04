@@ -1,0 +1,68 @@
+#define DMG_GENERIC					0
+#define DMG_CRUSH					(1 << 0)
+#define DMG_BULLET					(1 << 1)
+#define DMG_SLASH					(1 << 2)
+#define DMG_BURN					(1 << 3)
+#define DMG_VEHICLE					(1 << 4)
+#define DMG_FALL					(1 << 5)
+#define DMG_BLAST					(1 << 6)
+#define DMG_CLUB					(1 << 7)
+#define DMG_SHOCK					(1 << 8)
+#define DMG_SONIC					(1 << 9)
+#define DMG_ENERGYBEAM				(1 << 10)
+#define DMG_PREVENT_PHYSICS_FORCE	(1 << 11)
+#define DMG_NEVERGIB				(1 << 12)
+#define DMG_ALWAYSGIB				(1 << 13)
+#define DMG_DROWN					(1 << 14)
+#define DMG_TIMEBASED				(DMG_PARALYZE | DMG_NERVEGAS | DMG_POISON | DMG_RADIATION | DMG_DROWNRECOVER | DMG_ACID | DMG_SLOWBURN)
+#define DMG_PARALYZE				(1 << 15)
+#define DMG_NERVEGAS				(1 << 16)
+#define DMG_POISON					(1 << 17)
+#define DMG_RADIATION				(1 << 18)
+#define DMG_DROWNRECOVER			(1 << 19)
+#define DMG_ACID					(1 << 20)
+#define DMG_SLOWBURN				(1 << 21)
+#define DMG_REMOVENORAGDOLL			(1 << 22)
+#define DMG_PHYSGUN					(1 << 23)
+#define DMG_PLASMA					(1 << 24)
+#define DMG_AIRBOAT					(1 << 25)
+#define DMG_DISSOLVE				(1 << 26)
+#define DMG_BLAST_SURFACE			(1 << 27)
+#define DMG_DIRECT					(1 << 28)
+#define DMG_BUCKSHOT				(1 << 29)
+
+#define INS_ATTACK1		(1 << 0)
+#define INS_JUMP		(1 << 1)
+#define INS_DUCK		(1 << 2)
+#define INS_PRONE		(1 << 3)
+#define INS_FORWARD		(1 << 4)
+#define INS_BACKWARD	(1 << 5)
+#define INS_USE			(1 << 6)
+#define INS_LEFT		(1 << 9)
+#define INS_RIGHT		(1 << 10)
+#define INS_RELOAD		(1 << 11)
+#define INS_FIREMODE	(1 << 12)
+#define INS_LEAN_LEFT	(1 << 13)
+#define INS_LEAN_RIGHT	(1 << 14)
+#define INS_SPRINT		(1 << 15)
+#define INS_WALK		(1 << 16)
+#define INS_SPECIAL1	(1 << 17)
+#define INS_AIM			(1 << 18)
+#define INS_SCOREBOARD	(1 << 19)
+#define INS_FLASHLIGHT	(1 << 22)
+#define INS_AIM_TOGGLE	(1 << 27)
+#define INS_ACCESSORY	(1 << 28)
+
+#define		INS_PL_ZOOM				(1 << 0)		// 1		// Force to zoom
+#define		INS_PL_1				(1 << 1)		// 2		// It could be ducking but massive buggy to use
+#define		INS_PL_RUN				(1 << 2)		// 4		// Force to run if keep setting this, player cant normal walk or slow walk
+#define		INS_PL_WALK				(1 << 3)		// 8		// Force to walk only but player still can run just cannot normal walking
+#define		INS_PL_4				(1 << 4)		// 16		// 
+#define		INS_PL_FOCUS			(1 << 5)		// 32		// Zoom Focus (Buggy)
+#define		INS_PL_SLIDE			(1 << 6)		// 64		// Force to sliding, if you keep setting this, player forever sliding lol
+#define		INS_PL_BUYZONE			(1 << 7)		// 128		// Buyzone, Resupply everywhere! (Note: Buyzone makes no friendlyfire damage)
+#define		INS_PL_8				(1 << 8)		// 256		// 
+#define		INS_PL_BLOCKZONE		(1 << 9)		// 512		// Restricted Zone, Player will be restricted, (Note: This flag applied with INS_PL_LOWERZONE)
+#define		INS_PL_LOWERZONE		(1 << 10)		// 1024		// Weapon Lower Zone
+#define		INS_PL_SPAWNZONE		(1 << 11)		// 2048		// ENTER SPAWN ZONE (Also can resupply)
+#define		INS_PL_12				(1 << 12)		// 4096		//
